@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Games</string>
+    <string name="title_activity_login">Login</string>
+    <string name="login">Login</string>
+    <string name="password">Senha</string>
+    <string name="username">Nome de Usuário</string>
+    <string name="confirm_password">Confirme sua Senha</string>
+    <string name="create">Cadastrar</string>
+    <string name="back">Voltar</string>
+    <string name="home">Home</string>
+    <string name="new_game">Novo Jogo</string>
+    <string name="about">Sobre</string>
+    <string name="logout">Sair</string>
+
+    <string name="developed_by">Desenvolvido por: Amanda Prado da Costa</string>
+    <string name="description">Material da Aula de Desenvolvimento Android com Cloud Computer - FIAP</string>
+    <string name="description_app">Aplicativo de Cadastro de Jogos</string>
+    <string name="error_communication">Ocorreu um erro ao carregar</string>
+    <string name="error">Erro</string>
+    <string name="search">Buscar</string>
+    <string name="loading">Carregando</string>
+    <string name="find_by_category">Buscar por Categoria</string>
+    <string name="title">Título</string>
+    <string name="platform">Plataforma</string>
+    <string name="category">Categoria</string>
+    <string name="image">Imagem</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="delete">Deletar</string>
+    <string name="image_url">URL da Imagem</string>
+    <string name="error_message">Ocorreu um Erro</string>
+</resources>
