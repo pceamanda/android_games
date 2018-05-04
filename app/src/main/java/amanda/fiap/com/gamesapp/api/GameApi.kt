@@ -9,9 +9,6 @@ interface GameApi {
     @GET("/game")
     fun findAll() : Call<List<Game>>
 
-    @GET("/game/{platform}")
-    fun findByPlatform(@Path("platform") category: String): Call<List<Game>>
-
     @GET("/game/{category}")
     fun findByCategory(@Path("category") category: String): Call<List<Game>>
 

@@ -28,4 +28,5 @@
     <string name="delete">Deletar</string>
     <string name="image_url">URL da Imagem</string>
     <string name="error_message">Ocorreu um Erro</string>
+    <string name="version">Versão: 1.0.0</string>
 </resources>

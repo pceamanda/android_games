@@ -45,7 +45,7 @@ class LoginActivity : AppCompatActivity() {
                                 e.printStackTrace()
                             }
                         } else {
-                            Toast.makeText(applicationContext, "Usuário ou Senha Inválidos", Toast.LENGTH_LONG).show()
+                            Toast.makeText(applicationContext, "Usuário e/ou Senha Inválidos", Toast.LENGTH_LONG).show()
                         }
                     }else {
                         Toast.makeText(applicationContext, response?.body().toString(), Toast.LENGTH_LONG).show()

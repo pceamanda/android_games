@@ -9,7 +9,6 @@ import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
-import kotlinx.android.synthetic.main.activity_login.*
 import kotlinx.android.synthetic.main.activity_user.*
 import retrofit2.Call
 import retrofit2.Callback
@@ -26,9 +25,9 @@ class UserActivity : AppCompatActivity() {
 
             if(!validarCadastro()) {
                 Toast.makeText(applicationContext, "Todos os campos são obrigatórios", Toast.LENGTH_LONG).show()
-            } else if(password?.editText?.text.toString().equals(confirmPassword?.editText?.text.toString())) {
+            } else if(newPassword?.editText?.text.toString() == confirmPassword?.editText?.text.toString()) {
 
-                val newUser = User(null, username?.editText?.text.toString(), password?.editText?.text.toString())
+                val newUser = User(null, newUser?.editText?.text.toString(), newPassword?.editText?.text.toString())
 
                 api.save(newUser).enqueue(object : Callback<Void> {
                     override fun onResponse(call: Call<Void>?, response: Response<Void>?) {
@@ -66,11 +65,11 @@ class UserActivity : AppCompatActivity() {
 
     fun validarCadastro(): Boolean {
 
-        if("" == username?.editText?.text.toString()) {
+        if("" == newUser?.editText?.text.toString()) {
             return false
         }
 
-        if("" == password?.editText?.text.toString()){
+        if("" == newPassword?.editText?.text.toString()){
             return false
         }
 
